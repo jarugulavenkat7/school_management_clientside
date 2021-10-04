@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Student } from './student';
+import { StudentService } from './student.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'school-management-system-client';
+  students:Student[]=[];
+
+  constructor(private service:StudentService) { }
+  ngOnInit(): void {
+    this.getStudents();
+  }
+  
+
+public getStudents(){
+  let resp=this.service.getStudentsList();
+  resp.subscribe((data)=>this.students=data);
+  //console.log(JSON.stringify(this.resume));
+    }
 }
