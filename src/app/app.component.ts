@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Student } from './student';
-import { StudentService } from './student.service';
+
 
 
 @Component({
@@ -9,17 +8,10 @@ import { StudentService } from './student.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  students:Student[]=[];
+  
 
-  constructor(private service:StudentService) { }
-  ngOnInit(): void {
-    this.getStudents();
+  constructor() { }
+ 
   }
   
 
-public getStudents(){
-  let resp=this.service.getStudentsList();
-  resp.subscribe((data)=>this.students=data);
-  //console.log(JSON.stringify(this.resume));
-    }
-}

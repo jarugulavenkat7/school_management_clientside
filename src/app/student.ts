@@ -1,10 +1,9 @@
 export class Student {
-    constructor(
-   public id: number,
-    public firstname:string,
-    public lastname:string,
-    public email:string){
-
-    }
+    public firstName:string;
+    public lastName:string;
+    public email:string;
+    public id:number;
+    
+    
 
 }

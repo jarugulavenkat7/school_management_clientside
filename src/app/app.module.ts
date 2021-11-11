@@ -5,15 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentService } from './student.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { EditStudentComponent } from './edit-student/edit-student.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditStudentComponent,
+    AddStudentComponent,
+    StudentListComponent,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule
     
   ],
   providers: [StudentService],
