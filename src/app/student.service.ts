@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class StudentService {
   
   //private baseUrl = 'http://localhost:9090/api/students';
-  private baseUrl = 'https://school-management-serverside.herokuapp.com';
+  private baseUrl = 'https://school-management-serverside.herokuapp.com/api/students';
 
 
   constructor(private http:HttpClient) { }
