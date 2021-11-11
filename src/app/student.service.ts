@@ -7,8 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class StudentService {
-
-  private baseUrl = 'http://localhost:9090/api/students';
+  
+  //private baseUrl = 'http://localhost:9090/api/students';
+  private baseUrl = 'https://school-management-serverside.herokuapp.com';
 
 
   constructor(private http:HttpClient) { }
