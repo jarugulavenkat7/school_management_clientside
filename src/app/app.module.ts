@@ -11,13 +11,15 @@ import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     EditStudentComponent,
     AddStudentComponent,
     StudentListComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
