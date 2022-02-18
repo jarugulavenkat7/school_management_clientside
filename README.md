@@ -1,5 +1,7 @@
 # SchoolManagementSystemClient
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/248421f88d83425db30213c0ba138e9d)](https://app.codacy.com/gh/jarugulavenkat7/school_management_clientside?utm_source=github.com&utm_medium=referral&utm_content=jarugulavenkat7/school_management_clientside&utm_campaign=Badge_Grade_Settings)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
 ## Development server
